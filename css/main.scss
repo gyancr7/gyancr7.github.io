@@ -1,6 +1,16 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+@import "pygments";
+@import "normalize";
+@import "config";
+@import "mixins";
+@import "base";
+@import "atoms";
+@import "molecules";
+@import "organisms";
+@import "post";
+@import "page";
 @charset "utf-8";
 
 
@@ -29,7 +39,7 @@ $neat-grid: (
   columns: 12,
   gutter: 20px,
 );
-//$on-palm:          600px;
+$on-palm:          600px;
 $on-laptop:        800px;
 // Use media queries like this:
  @include media-query($on-palm) {
